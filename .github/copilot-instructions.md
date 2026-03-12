@@ -1,0 +1,9 @@
+- Proyecto: Admin Quadro Smart Living (React + Vite + Tailwind + Supabase).
+- Lenguaje UI: español.
+- Autenticación: Supabase Auth con flujo por documento para propietarios y por correo para admins/superadmin.
+- Roles disponibles: owner, admin, super_admin.
+- Seguridad de datos: RLS en tablas y storage; no usar service_role en frontend.
+- Archivos SQL clave en `supabase/`: `schema.sql`, `create_owner.sql`, `promote_admin.sql`, `promote_super_admin.sql`, `demote_admin.sql`.
+- Reportes PDF en `src/lib/pdfReports.js` con import dinámico.
+- Para despliegue cloud usar `.github/workflows/deploy-pages.yml` y secrets `VITE_SUPABASE_URL` + `VITE_SUPABASE_ANON_KEY`.
+- Mantener cambios minimalistas, sin alterar flujos de roles existentes.

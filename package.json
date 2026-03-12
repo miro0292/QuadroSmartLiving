@@ -1,0 +1,35 @@
+{
+  "name": "adminquadrosmartliving",
+  "version": "1.0.0",
+  "description": "Aplicación web para pagos de administración de edificio",
+  "private": true,
+  "homepage": "https://TU_USUARIO.github.io/AdminQuadroSmartLiving",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@fontsource/montserrat": "^5.2.8",
+    "@supabase/supabase-js": "^2.98.0",
+    "jspdf": "^4.2.0",
+    "jspdf-autotable": "^5.0.7",
+    "lucide-react": "^0.576.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.4",
+    "autoprefixer": "^10.4.27",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.3.1"
+  }
+}
